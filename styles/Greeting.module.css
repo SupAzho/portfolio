@@ -1,0 +1,10 @@
+
+.imgDiv {
+         position: absolute; right: 0px; bottom: 10px;
+    
+  }
+  @media only screen and (max-width: 600px) {
+    .imgDiv {
+      position: absolute; right: -86px; bottom: -119px;
+    }
+  }

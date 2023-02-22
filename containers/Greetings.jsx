@@ -5,6 +5,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 
 import GreetingLottie from "../components/DisplayLottie";
 import SocialLinks from "../components/SocialLinks";
+import styles from '../styles/Greeting.module.css'
 
 const Greetings = () => {
   useEffect(() => {
@@ -51,7 +52,8 @@ const Greetings = () => {
                 <Col
                   lg="6"
                   id="dev-image"
-                  style={{ position: "absolute", right: "0px", bottom: "10px" }}
+              
+                className={styles.imgDiv}
                 >
                   <GreetingLottie animationPath="/lottie/dev.json" />
                 </Col>
