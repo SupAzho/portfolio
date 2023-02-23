@@ -39,14 +39,15 @@ export const ContactUs = () => {
 
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+       "service_tq86vut",
+       "template_wrbr3f1",
         form.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+       "Yodm7ia5bHggEEI-p"
       )
       .then(
         (result) => {
           console.log(result.text);
+          console.log("message sent");
           setAlert(successAlert);
         },
         (error) => {
